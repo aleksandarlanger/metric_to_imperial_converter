@@ -26,14 +26,14 @@ h1 {
 
 .unit__input {
   background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd);
-  padding: 5em 0;
-  height: 30vh;
+  padding: 3em 0;
+  height: 50%;
 }
 
 .unit__result {
-  height: 40vh;
+  height: 50%;
   background: linear-gradient(to left, #2c5364, #203a43, #0f2027);
-  padding: 5em 0;
+  padding: 3em 0;
   color: #f9f9f9;
 }
 
