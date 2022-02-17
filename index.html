@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Unit onverter</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="top__area">
+        <div class="unit__input">
+          <h1>
+            Metric <span class="text_color">to</span> Imperial unit converter
+          </h1>
+
+          <!-- <input type="text" id="numberToConvert" /> -->
+
+          <input id="userInput" type="text" placeholder=" ..." /> <br />
+          <button onclick="convertValue()">Convert</button>
+
+          <p class="nan_alert"></p>
+
+          <!-- <button id="convertBtn">Convert</button> -->
+        </div>
+      </div>
+
+      <div class="bottom__area">
+        <div class="unit__result">
+          <h3>Length - Feet</h3>
+          <p class="lenght__result">
+            <span class="imperial--value--lenght color_selector">0</span> Meters
+            is
+            <span class="metric--value--lenght color_selector"> </span>
+            <span class="color_selector"></span> Feet
+          </p>
+          <h3>Volume - Gallons</h3>
+          <p class="volume__result">
+            <span class="imperial--value--volume color_selector">0</span> Liters
+            is
+            <span class="metric--value--volume color_selector"> </span>
+            <span class="color_selector"></span> Gallons
+          </p>
+          <h3>Mass - Pounds</h3>
+          <p class="mass__result">
+            <span class="imperial--value--mass color_selector">0</span>
+            Kilograms is
+            <span class="metric--value--mass color_selector"> </span>
+            <span class="color_selector"></span> Pounds
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
