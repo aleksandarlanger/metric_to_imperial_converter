@@ -24,7 +24,8 @@ h1 {
 }
 
 .container {
-  width: 60%;
+  width: 60vw;
+  height: 50vh;
   margin: 0 auto;
   text-align: center;
   box-shadow: rgba(50, 50, 93, 0.226) 0px 50px 100px -20px,
@@ -39,7 +40,6 @@ h1 {
 
 .unit__input {
   padding: 3em 0;
-  height: 50%;
   background-color: #ffd460;
 
   border-top-right-radius: 0.6em;
@@ -47,7 +47,6 @@ h1 {
 }
 
 .unit__result {
-  height: 40%;
   padding: 3em 0;
   color: #f9f9f9;
   background-color: #2d4059;
@@ -57,7 +56,6 @@ h1 {
 
 .background {
   background-color: white;
-  height: 50vh;
   margin-top: 1em;
 }
 
@@ -83,12 +81,10 @@ select:focus {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 100%;
 }
 
 button {
   align-items: center;
-  appearance: none;
   background-color: #2d4059;
   border: 0;
   border-radius: 6px;
@@ -109,18 +105,17 @@ button {
   text-decoration: none;
   transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
   margin-top: 1em;
 }
 
-button:hover {
+/* button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #090a16 0 -3px 0 inset;
   transform: translateY(-2px);
-}
+} */
 
 button:active {
   box-shadow: #090a16 0 3px 7px inset;
@@ -134,4 +129,14 @@ button:active {
 .color_selector {
   font-weight: 900;
   color: #ea5455;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  button:hover {
+    color: #f9f9f9;
+  }
 }
