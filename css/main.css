@@ -1,0 +1,137 @@
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+h1 {
+  color: #2d4059;
+}
+
+.nan_alert {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.226) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.87) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.932) 0px -2px 6px 0px inset;
+
+  border-bottom-right-radius: 0.6em;
+  border-bottom-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+  border-top-left-radius: 0.6em;
+}
+
+.unit__input {
+  padding: 3em 0;
+  height: 50%;
+  background-color: #ffd460;
+
+  border-top-right-radius: 0.6em;
+  border-top-left-radius: 0.6em;
+}
+
+.unit__result {
+  height: 40%;
+  padding: 3em 0;
+  color: #f9f9f9;
+  background-color: #2d4059;
+  border-bottom-right-radius: 0.6em;
+  border-bottom-left-radius: 0.6em;
+}
+
+.background {
+  background-color: white;
+  height: 50vh;
+  margin-top: 1em;
+}
+
+#userInput {
+  border: none;
+  width: 16em;
+  height: 40px;
+  text-align: center;
+  font-weight: 900;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 4px 8px -4.5px inset;
+  margin: 0 1em;
+}
+
+#userInput:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid rgba(214, 57, 29, 0.301);
+}
+
+.bottom__area,
+.top__area {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+button {
+  align-items: center;
+  appearance: none;
+  background-color: #2d4059;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(19, 21, 36, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  height: 35px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  margin-top: 1em;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #090a16 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #090a16 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.text_color {
+  color: #ea5455;
+}
+
+.color_selector {
+  font-weight: 900;
+  color: #ea5455;
+}

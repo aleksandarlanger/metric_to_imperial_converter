@@ -8,55 +8,61 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Unit onverter</title>
   </head>
 
   <body>
-    <main class="container">
-      <div class="top__area">
-        <div class="unit__input">
-          <h1>
-            Metric <span class="text_color">to</span> Imperial unit converter
-          </h1>
+    <div class="background">
+      <main class="container">
+        <div class="top__area">
+          <div class="unit__input">
+            <h1>
+              <span class="unit__text"> Metric </span>
+              <span class="text_color">to</span>
+              <span class="unit__text--to"> Imperial</span> unit converter
+            </h1>
 
-          <!-- <input type="text" id="numberToConvert" /> -->
-
-          <input id="userInput" type="text" placeholder=" ..." /> <br />
-          <button onclick="convertValue()">Convert</button>
-
-          <p class="nan_alert"></p>
-
-          <!-- <button id="convertBtn">Convert</button> -->
+            <input id="userInput" type="text" placeholder=" metric unit " />
+            <br />
+            <button id="convertBtn">Convert</button>
+            <button id="unit__switch">Switch units</button>
+          </div>
         </div>
-      </div>
 
-      <div class="bottom__area">
-        <div class="unit__result">
-          <h3>Length - Feet</h3>
-          <p class="lenght__result">
-            <span class="imperial--value--lenght color_selector">0</span> Meters
-            is
-            <span class="metric--value--lenght color_selector"> </span>
-            <span class="color_selector"></span> Feet
-          </p>
-          <h3>Volume - Gallons</h3>
-          <p class="volume__result">
-            <span class="imperial--value--volume color_selector">0</span> Liters
-            is
-            <span class="metric--value--volume color_selector"> </span>
-            <span class="color_selector"></span> Gallons
-          </p>
-          <h3>Mass - Pounds</h3>
-          <p class="mass__result">
-            <span class="imperial--value--mass color_selector">0</span>
-            Kilograms is
-            <span class="metric--value--mass color_selector"> </span>
-            <span class="color_selector"></span> Pounds
-          </p>
+        <div class="bottom__area">
+          <div class="unit__result">
+            <p class="nan_alert"></p>
+            <h3>Length</h3>
+            <p class="lenght__result">
+              <span class="imperial--value--lenght color_selector">0</span>
+              <span class="unit__reversef"> Meters </span>
+              is
+              <span class="metric--value--lenght color_selector"> </span>
+              <span class="color_selector"></span>
+              <span class="unit__reversem"> Feet </span>
+            </p>
+            <h3>Volume</h3>
+            <p class="volume__result">
+              <span class="imperial--value--volume color_selector">0</span>
+              <span class="unit__reverseg"> Liters</span>
+              is
+              <span class="metric--value--volume color_selector"> </span>
+              <span class="color_selector"></span>
+              <span class="unit__reversel">Gallon </span>
+            </p>
+            <h3>Mass</h3>
+            <p class="mass__result">
+              <span class="imperial--value--mass color_selector">0</span>
+              <span class="unit__reversep"> Kilograms </span> is
+              <span class="metric--value--mass color_selector"> </span>
+              <span class="color_selector"></span>
+              <span class="unit__reversek">Pounds</span>
+            </p>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
 
     <script src="index.js"></script>
   </body>
