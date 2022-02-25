@@ -24,7 +24,7 @@ h1 {
 }
 
 .container {
-  width: 60vw;
+  width: 40vw;
   height: 50vh;
   margin: 0 auto;
   text-align: center;
@@ -125,7 +125,7 @@ button:active {
   color: #ea5455;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1300px) {
   .container {
     width: 90vw;
   }
@@ -133,9 +133,4 @@ button:active {
   button:hover {
     color: #f9f9f9;
   }
-}
-
-.isNaN {
-  margin: 0;
-  padding: 0;
 }
