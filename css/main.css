@@ -134,3 +134,8 @@ button:active {
     color: #f9f9f9;
   }
 }
+
+.isNaN {
+  margin: 0;
+  padding: 0;
+}

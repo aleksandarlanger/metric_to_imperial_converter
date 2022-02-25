@@ -34,7 +34,6 @@ function converter() {
       ).textContent = `${numberToConvert}`;
       numberToBeConverted = [];
       switcher = true;
-
       document.querySelector(".unit__text").textContent = "Metric to";
       document.querySelector(".unit__text--to").textContent = "Imperial";
       document.querySelector(".unit__reversem").textContent = "Feet";
@@ -44,13 +43,17 @@ function converter() {
       document.querySelector(".unit__reverseg").textContent = "Litters";
       document.querySelector(".unit__reversep").textContent = "Kilograms";
     }
+
+    if (isNaN(numberToConvert)) {
+      alert("PLEASE ENTER A VALID NUMBER");
+      numberToConvert = 0;
+    }
   }
 }
 
 function reverseCalc() {
   numberToConvert = parseFloat(document.querySelector("#userInput").value);
   numberToBeConverted.push(numberToConvert);
-
   if ((switcher === true) | (startState === true)) {
     for (const userNumber of numberToBeConverted) {
       document.querySelector(".metric--value--lenght").textContent = (
@@ -71,7 +74,6 @@ function reverseCalc() {
       document.querySelector(
         ".imperial--value--mass"
       ).textContent = ` ${numberToConvert}`;
-
       document.querySelector(".unit__text").textContent = "Imperial to";
       document.querySelector(".unit__text--to").textContent = "Metric";
       document.querySelector(".unit__reversem").textContent = "Meters";
@@ -80,9 +82,13 @@ function reverseCalc() {
       document.querySelector(".unit__reversef").textContent = "Feet";
       document.querySelector(".unit__reverseg").textContent = "Gallon";
       document.querySelector(".unit__reversep").textContent = "Pound";
-
       numberToBeConverted = [];
       switcher = false;
+    }
+
+    if (isNaN(numberToConvert)) {
+      alert("PLEASE ENTER A VALID NUMBER");
+      numberToConvert = 0;
     }
   } else {
     converter();
