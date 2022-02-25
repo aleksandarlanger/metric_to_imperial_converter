@@ -47,7 +47,7 @@ h1 {
 }
 
 .unit__result {
-  padding: 3em 0;
+  padding: 5.5em 0;
   color: #f9f9f9;
   background-color: #2d4059;
   border-bottom-right-radius: 0.6em;
@@ -110,12 +110,6 @@ button {
   will-change: box-shadow, transform;
   margin-top: 1em;
 }
-
-/* button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #090a16 0 -3px 0 inset;
-  transform: translateY(-2px);
-} */
 
 button:active {
   box-shadow: #090a16 0 3px 7px inset;
